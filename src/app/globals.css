@@ -1,0 +1,43 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+@import "tailwindcss";
+
+:root {
+  --c-bg: #f7f6f2;
+  --c-panel: #ffffff;
+  --c-ink: #1c1b18;
+  --c-muted: #6f6c64;
+  --c-line: #e3e0d8;
+  --c-accent: #2f6f5e;
+  --c-accent-soft: #e4efea;
+  --c-danger: #b3402f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #151513;
+    --c-panel: #1e1e1b;
+    --c-ink: #ecebe6;
+    --c-muted: #9b988f;
+    --c-line: #34332f;
+    --c-accent: #5fae96;
+    --c-accent-soft: #1f2f2a;
+    --c-danger: #e0796a;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-panel: var(--c-panel);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-line);
+  --color-accent: var(--c-accent);
+  --color-accent-soft: var(--c-accent-soft);
+  --color-danger: var(--c-danger);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: var(--c-bg);
+  color: var(--c-ink);
+}
